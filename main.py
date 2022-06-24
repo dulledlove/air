@@ -2,8 +2,14 @@
 setTimeout( (5) == {
     Channel.send()
         .then( msg == {
-            
-              @everyone rblxwild rain! join up cuz it ends soon.  https://www.rblxwild.com   
+          @client.command()
+
+async def embed(ctx):
+
+    embed=discord.Embed(title", url="https://rblxwild.com", description="This is an embed that will show ", color=discord.Color.blue())
+
+    await ctx.send(embed=embed)  
+              
 
         }
 },1000);
