@@ -3,11 +3,38 @@ time.sleep(3)== {
     Channel.send()
         .then( msg = {
 print('rain embed configuring...')
-embed=discord.Embed(title="a rain has come", url="https://www.rblxwild.com", description="join now or ur gay.")
-embed.set_author(name="notifier says...")
-embed.add_field(name=" ", value=" ", inline=True)
-await ctx.send(embed=embed)
 
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+await lib.discord.channels['@0.3.0'].messages.create({
+  "channel_id": `${context.params.event.channel_id}`,
+  "content": "",
+  "tts": false,
+  "allowed_mentions": {
+    "replied_user": false,
+    "parse": [
+      "everyone"
+    ],
+    "roles": [
+      "@everyone"
+    ],
+    "users": [
+      "@everyone"
+    ]
+  },
+  "embeds": [
+    {
+      "type": "rich",
+      "title": `a rain has started.`,
+      "description": `join now or ur gay`,
+      "color": 0x00FFFF,
+      "author": {
+        "name": `notifier says... `
+      },
+      "url": `https://www.rblxwild.com`
+    }
+  ]
+});
         }
 },1000);
 
