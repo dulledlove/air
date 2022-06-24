@@ -1,9 +1,6 @@
 
 setTimeout( (5) == {
-    let demo = ["a"];
-    let Picked = demo[Math.floor(Math.random() * demo.length)]);
-    //I already explained the above part
-    Channel.send(Picked)
+    Channel.send()
         .then( msg == {
             // rain notitfer message
               @everyone rblxwild rain! join up cuz it ends soon.  https://www.rblxwild.com   
