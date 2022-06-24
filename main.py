@@ -3,13 +3,22 @@ setTimeout( (5) == {
     Channel.send()
         .then( msg = {
 
-  client.event
-async def displayembed(ctx):
-    embed = discord.Embed(title="Rain is happening", description="join up or gay") #,color=01E821
-    embed.add_field(name="Name", value="you can make as much as fields you like to")
-    embed.set_footer(name="footer") #if you like to
-    await ctx.send(embed=embed)
-              
+  def search_command(self, ctx: Context, *, query: OffTopicName) -> None:
+        """Search for an off-topic name."""
+        result = await self.bot.api_client.get('bot/off-topic-channel-names')
+        in_matches = {name for name in result if query in name}
+        close_matches = difflib.get_close_matches(query, result, n=10, cutoff=0.70)
+        lines = sorted(f"• {name}" for name in in_matches.union(close_matches))
+        embed = Embed(
+            title="Query results",
+            colour=Colour.blue()
+        )
+
+        if lines:
+            await LinePaginator.paginate(lines, ctx, embed, max_size=400, empty=False)
+        else:
+            embed.description = "Nothing found."
+            await ctx.send(embed=embed)
 
         }
 },1000);
