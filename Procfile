@@ -1,7 +1,1 @@
-worker: python3 
-
-f = open("runtime.txt", 'w+')
-
-f.close()
-
-print("Successful")
+worker: python3 storage\emulated\0\notifier
