@@ -1,4 +1,4 @@
-
+worker: python3
 import os
 import glob
 
