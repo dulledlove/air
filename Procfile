@@ -1,2 +1,2 @@
 worker: python3 
-/storage/emulated/0/notifier
+C:\Users\jerem\OneDrive\Documents\air-main\air-main
