@@ -5,7 +5,7 @@ setTimeout( (30) => {
     Channel.send(Picked)
         .then( msg => {
               @everyone rblxwild rain! join up.
-              <a href = "https://www.rblxwild.com"> 
+              https://www.rblxwild.com
             //If you wanna do anything like adding reactions
         }
 },1000);
