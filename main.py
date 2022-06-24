@@ -3,22 +3,27 @@ setTimeout( (5) == {
     Channel.send()
         .then( msg = {
 
-  def search_command(self, ctx: Context, *, query: OffTopicName) -> None:
-        """Search for an off-topic name."""
-        result = await self.bot.api_client.get('bot/off-topic-channel-names')
-        in_matches = {name for name in result if query in name}
-        close_matches = difflib.get_close_matches(query, result, n=10, cutoff=0.70)
-        lines = sorted(f"• {name}" for name in in_matches.union(close_matches))
-        embed = Embed(
-            title="Query results",
-            colour=Colour.blue()
-        )
+#### Create the initial embed object ####
+embed=discord.Embed(title="Sample Embed", url="https://realdrewdata.medium.com/", description="This is an embed that will show how to build an embed and the different components", color=0x109319)
 
-        if lines:
-            await LinePaginator.paginate(lines, ctx, embed, max_size=400, empty=False)
-        else:
-            embed.description = "Nothing found."
-            await ctx.send(embed=embed)
+# Add author, thumbnail, fields, and footer to the embed
+embed.set_author(name="RealDrewData", url="https://twitter.com/RealDrewData", icon_url="https://pbs.twimg.com/profile_images/1327036716226646017/ZuaMDdtm_400x400.jpg")
+
+embed.set_thumbnail(url="https://i.imgur.com/axLm3p6.jpeg")
+
+embed.add_field(name="Field 1 Title", value="This is the value for field 1. This is NOT an inline field.", inline=False) 
+embed.add_field(name="Field 2 Title", value="It is inline with Field 3", inline=True)
+embed.add_field(name="Field 3 Title", value="It is inline with Field 2", inline=True)
+
+embed.set_footer(text="This is the footer. It contains text at the bottom of the embed")
+
+
+#### Useful ctx variables ####
+## User's display name in the server
+ctx.author.display_name
+
+## User's avatar URL
+ctx.author.avatar_url
 
         }
 },1000);
