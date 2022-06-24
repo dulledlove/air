@@ -5,8 +5,7 @@ setTimeout( (30) => {
     Channel.send(Picked)
         .then( msg => {
             // rain notitfer message
-              @everyone rblxwild rain! join up cuz it ends soon.
-              -->  https://www.rblxwild.com  <--  
+              @everyone rblxwild rain! join up cuz it ends soon.  https://www.rblxwild.com   
             //If you wanna do anything like adding reactions
         }
 },1000);
