@@ -3,11 +3,12 @@ setTimeout( (5) == {
     Channel.send()
         .then( msg = {
 
-async def embed(ctx):
-
-    embed=discord.Embed(title", url="https://rblxwild.com", description=" 2 minutes before it expires so join quick ", color=discord.Color.blue())
-
-    await ctx.send(embed=embed)  
+  client.event
+async def displayembed(ctx):
+    embed = discord.Embed(title="Rain is happening", description="join up or gay") #,color=01E821
+    embed.add_field(name="Name", value="you can make as much as fields you like to")
+    embed.set_footer(name="footer") #if you like to
+    await ctx.send(embed=embed)
               
 
         }
