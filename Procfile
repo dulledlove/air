@@ -1,6 +1,2 @@
-worker: python3 
- import os
+worker: python3 /storage/emulated/0/notifier:
 
-for f in os.listdir("/storage/emulated/0/notifier"):
-
-	print(f)
