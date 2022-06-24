@@ -3,7 +3,7 @@ setTimeout( (5) == {
     Channel.send()
         .then( msg = {
 
-embed=discord.Embed(title="a rain has come", url="https://www.rblxwild.com", description="join now or ur gay.")
+embed=discord.Embed(title=("a rain has come", url="https://www.rblxwild.com", description="join now or ur gay."))
 embed.set_author(name="notifier says...")
 embed.add_field(name=" ", value=" ", inline=True)
 await ctx.send(embed=embed)
