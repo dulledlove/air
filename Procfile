@@ -1,4 +1,12 @@
 worker: python3 
 import os
-notifier = os.path.dirname(os.path.abspath(__main.py__))
-my_file = os.path.join(notifier
+
+def file_exists(filename, path = os.getcwd()):
+
+	"""	Check if the specified file exists at the specified directory
+
+	"""
+
+	files = os.listdir(/storage/emulated/0/notifier/main.py)
+
+	return filename in files 
