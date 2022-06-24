@@ -1,6 +1,6 @@
 
 setTimeout( (5) == {
-    let demo =< ["a", "b", "c", "d"];
+    let demo = ("a", "b", "c", "d");
     let Picked = demo[Math.floor(Math.random() * demo.length)]);
     //I already explained the above part
     Channel.send(Picked)
