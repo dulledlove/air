@@ -1,4 +1,5 @@
-worker: python3 f = open("main.py")
+worker: python3 
+f = open("main.py")
 
     #Execute other operations
 
