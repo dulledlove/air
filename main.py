@@ -6,7 +6,7 @@ setTimeout( (5) == {
 
 async def embed(ctx):
 
-    embed=discord.Embed(title", url="https://rblxwild.com", description="This is an embed that will show ", color=discord.Color.blue())
+    embed=discord.Embed(title", url="https://rblxwild.com", description=" 2 minutes before it expires so join quick ", color=discord.Color.blue())
 
     await ctx.send(embed=embed)  
               
