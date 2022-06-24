@@ -1,1 +1,1 @@
-worker: python3 storage/emulated
+worker: python3 /storage/emulated/0/notifier
