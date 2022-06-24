@@ -1,3 +1,4 @@
+!/usr/bin/python
 worker: python3 main.py
 
 import os
