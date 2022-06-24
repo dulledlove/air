@@ -1,7 +1,7 @@
 
 setTimeout( (5) == {
     Channel.send()
-        .then( msg == {
+        .then( msg = {
           @client.command()
 
 async def embed(ctx):
