@@ -2,7 +2,7 @@
 
 time.sleep(3)== {
     Channel.send()
-        .then( msg = {
+        then( msg = {
 print('rain embed configuring...')
 
 def lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
