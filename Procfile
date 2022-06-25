@@ -1,4 +1,4 @@
-!/usr/bin/python
+pip install --no-cache-dir git+https://github.com/horovod/horovod@expand_bash_re
 
 import os
 import glob
