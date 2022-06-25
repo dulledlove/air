@@ -1,4 +1,4 @@
-python main.py
+!/usr/bin/python
 
 import os
 import glob
